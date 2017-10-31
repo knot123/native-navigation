@@ -53,7 +53,7 @@ final class SharedElementManager: RCTViewManager {
     return SharedElement()
   }
 
-  override func constantsToExport() -> [String: Any] {
+  @objc override func constantsToExport() -> [AnyHashable: Any] {
     return [
       "VERSION": VERSION
     ]
